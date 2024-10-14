@@ -1,0 +1,157 @@
+.about-section
+  background-image: url('../images/about-bg.jpg')
+  background-repeat: no-repeat
+  background-position: left center
+  background-size: cover
+  background-color: #1B1B1B
+  color: $color-white
+  +above($breakpoints.sm)
+    background-position: center
+
+  &__inner
+    position relative
+    z-index 1
+    padding: 50px 0 246px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      padding: 60px 0 50px 0
+    +above($breakpoints.md)
+      padding: 80px 0 70px 0
+    +above($breakpoints.xxl)
+      padding: 107px 0 140px 0
+
+  &__image
+    position: absolute
+    bottom: 0
+    right calc(50% - 81px)
+    +above($breakpoints.sm)
+      right -234px
+    +above($breakpoints.md)
+      right -357px
+    +above($breakpoints.xxl)
+      right -480px
+    img
+      height: auto
+      width 168px
+      +above($breakpoints.sm)
+        width 287px
+      +above($breakpoints.md)
+        width 417px
+      +above($breakpoints.xxl)
+        width 543px
+
+  &__title
+    margin: 0 0 14px 0
+    +above($breakpoints.sm)
+      margin: 0 0 20px 0
+    +above($breakpoints.md)
+      margin: 0 0 30px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 50px 0
+
+  &__info
+    background-color: $color-green-1
+    padding: 20px 14px
+    margin: 0 0 20px 0
+    +above($breakpoints.sm)
+      padding: 30px 30px 22px 30px
+      margin: 0 0 20px 0
+    +above($breakpoints.md)
+      padding: 40px 40px 30px 40px
+    +above($breakpoints.xxl)
+      padding: 64px 64px 46px 64px
+      margin: 0 0 26px 0
+    div
+      margin: 0 0 14px 0
+      +above($breakpoints.md)
+        margin: 0 0 20px 0
+      +above($breakpoints.xxl)
+        margin: 0 0 30px 0
+      &:last-child
+        margin: 0
+
+  &__frame
+    background-color: #1B1B1B
+    overflow: hidden
+    +above($breakpoints.sm)
+      display: flex
+
+  &__frame-info
+    background-color: #FFFDF6
+    box-shadow: -3px 0 25px -12px rgba(190, 116, 116, 0.25);
+    min-height: 100%;
+    padding: 20px 10px
+    +above($breakpoints.sm)
+      padding: 120px 0 26px 24px;
+      width: 315px;
+    +above($breakpoints.md)
+      padding: 157px 0 32px 30px
+      width 447px
+    +above($breakpoints.xxl)
+      width 559px
+      padding: 241px 0 40px 40px
+
+  &__frame-description
+    color: rgba(61, 61, 61, 0.7)
+    margin: 0 0 8px 0
+    +above($breakpoints.sm)
+      margin: 0 0 14px 0
+
+  &__frame-title
+    color: #3d3d3d;
+
+  &__frame-feedback
+    padding: 26px 20px
+    +above($breakpoints.sm)
+      width: 381px;
+      padding: 26px 30px
+    +above($breakpoints.md)
+      width: 492px;
+      padding: 34px 48px 34px 44px;
+    +above($breakpoints.xxl)
+      width 619px
+      padding: 62px 58px 63px 47px
+    .feedback
+      &__item
+        width 100%
+        &:last-child
+          width 100%
+        .input__field
+          background: $color-white
+          color: $color-black
+          &::-ms-input-placeholder
+            color: #3d3d3d;
+          &::-moz-placeholder
+            color: #3d3d3d;
+          &::-webkit-input-placeholder
+            color: #3d3d3d;
+          &::placeholder
+            color: #3d3d3d;
+          &.error
+            color: $color-error
+            &::placeholder
+              color: $color-error
+            &::-ms-input-placeholder
+              color: $color-error
+            &::-moz-placeholder
+              color: $color-error
+            &::-webkit-input-placeholder
+              color: $color-error
+        .btn
+          background: $color-green-1
+          color: $color-white
+          font-size: 14px
+          +above($breakpoints.md)
+            font-size: 16px
+          +above($breakpoints.xxl)
+            font-size: 18px
+        .btn,
+        .input__field
+          height: 42px
+          +above($breakpoints.sm)
+            height: 38px
+          +above($breakpoints.md)
+            height: 48px
+          +above($breakpoints.xxl)
+            height: 60px

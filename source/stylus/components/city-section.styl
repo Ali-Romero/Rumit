@@ -1,0 +1,75 @@
+.city-section
+  background-image: url('../images/city-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  color: $color-white
+  background-color: #3B443C
+  background-position: calc(50% - 62px) center
+  +above($breakpoints.sm)
+    background-position: center
+
+  &__inner
+    padding: 50px 0 40px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      padding: 40px 0 50px 0
+    +above($breakpoints.md)
+      padding: 50px 0 60px 0
+    +above($breakpoints.xxl)
+      padding: 70px 0 136px 0
+
+  &__logo
+    margin: 0 0 14px 0
+    +above($breakpoints.sm)
+      margin: 0 0 20px 0
+    +above($breakpoints.md)
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 36px 0
+    img
+      height: auto
+      width 128px
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+        width 150px
+      +above($breakpoints.md)
+        width 220px
+      +above($breakpoints.xxl)
+        width 300px
+
+  &__title
+    margin: 0 0 20px 0
+    +above($breakpoints.md)
+      margin: 0 0 30px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 58px 0
+
+  &__feedback
+    .feedback
+      background: #1B1B1B
+      display: inline-block
+      padding: 20px 18px
+      +above($breakpoints.md)
+        padding: 26px 21px
+      +above($breakpoints.xxl)
+        padding: 32px 30px
+      &__list
+        justify-content: center
+        +above($breakpoints.sm)
+          justify-content: flex-start
+      &__item
+        +above($breakpoints.sm)
+          width 180px
+        +above($breakpoints.md)
+          width 212px
+        +above($breakpoints.xxl)
+          width 238px
+
+      &__description
+        margin: 0 0 16px 0
+        +above($breakpoints.md)
+          margin: 0 0 18px 0
+        +above($breakpoints.xxl)
+          margin: 0 0 26px 0

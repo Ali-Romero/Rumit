@@ -1,0 +1,16 @@
+mixin footer()
+  footer.footer
+    .wrapper
+      .footer__row
+        .footer__col
+          .footer__logo
+            img(src="images/logo-main.png" loading="lazy" alt="logo" width="181" height="110").d-block
+
+
+        .footer__col
+          .footer__privacy.font-s-16
+            a(href="#" data-remodal-target="privacy").form-modal__agree-link Политика конфиденциальности
+
+        .footer__col
+          .footer__connection
+            +connection()

@@ -1,0 +1,62 @@
+section.main-section
+  +header()
+  .wrapper
+    .main-section__inner
+      .main-section__image
+        img(src="images/main-image.png" loading="lazy" alt="image" width="671" height="731").d-block
+
+      h1.main-section__title
+        span.main-section__title-main.font-s-40.d-block Поможем вам открыть 
+          br
+          |студию детского развития
+        span.main-section__title-line.d-block
+        span.main-section__title-secondary.font-s-24.d-block.font-g-med.text-init Начните зарабатывать от 2,36 млн рублей в год, 
+          br
+          |занимаясь востребованным бизнесом
+
+      .main-section__feedback
+        .feedback.border-r-20
+          form(data-feedback-form).feedback__form
+            .feedback__description.font-s-20.font-g-med.color-white Получите подробный план открытия
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Получить
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+
+      .main-section__info.font-s-20.swiper-main
+        .main-section__info-list.swiper-wrapper
+          .main-section__info-item.swiper-slide
+            .main-section__info-container
+              .main-section__info-icon
+                img(src="images/main-icon-1.svg" loading="lazy" alt="image" width="28" height="23").d-block
+              .main-section__info-line
+              .main-section__info-description
+                span.font-g-s-bold Большая 
+                br
+                |маржинальность
+          .main-section__info-item.swiper-slide
+            .main-section__info-container
+              .main-section__info-icon
+                img(src="images/main-icon-2.svg" loading="lazy" alt="image" width="28" height="23").d-block
+              .main-section__info-line
+              .main-section__info-description
+                span.font-g-s-bold Поддержка на 
+                br
+                |всех этапах
+          .main-section__info-item.swiper-slide
+            .main-section__info-container
+              .main-section__info-icon
+                img(src="images/main-icon-3.svg" loading="lazy" alt="image" width="28" height="23").d-block
+              .main-section__info-line
+              .main-section__info-description
+                span.font-g-s-bold Стабильная 
+                br
+                |прибыль
+        .main-section__info-bullets.swiper-bullets.main-pagination

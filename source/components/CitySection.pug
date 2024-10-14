@@ -1,0 +1,30 @@
+section.city-section
+  .wrapper
+    .city-section__inner
+      .city-section__logo
+        img(src="images/logo-main.png" loading="lazy" alt="logo" width="300" height="182").d-block
+
+      h2.city-section__title.font-s-32 Откройте магазин холодного оружия, 
+        br
+        |авторских сувениров и товаров для туризма 
+        br
+        |и получайте от 720 000 рублей чистой прибыли 
+        br
+        |ежемесячно
+
+
+      .city-section__feedback
+        .feedback.border-r-20
+          form(data-feedback-form).feedback__form
+            .feedback__description.font-s-24.font-f-med Проверьте, свободен ли ваш город для работы по франшизе «LAMANBORZ»
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span.text-up Проверить
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")

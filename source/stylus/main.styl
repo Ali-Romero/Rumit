@@ -1,0 +1,52 @@
+@font-face
+  font-family: "Gilroy-Regular"
+  src: url('../fonts/Gilroy-Regular.woff'), url('../fonts/Gilroy-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Gilroy-Medium"
+  src: url('../fonts/Gilroy-Medium.woff'), url('../fonts/Gilroy-Medium.woff2')
+  font-display: swap
+@font-face
+  font-family: "Gilroy-Semibold"
+  src: url('../fonts/Gilroy-Semibold.woff'), url('../fonts/Gilroy-Semibold.woff2')
+  font-display: swap
+@font-face
+  font-family: "Gilroy-Bold"
+  src: url('../fonts/Gilroy-Bold.woff'), url('../fonts/Gilroy-Bold.woff2')
+  font-display: swap
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow: hidden
+  position relative
+
+  &--thanks
+    font-size: 13px
+    line-height: 130%
+    background-image: url('../images/about-bg.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    color: $color-white
+    background-color:  #333332;
+    position relative
+    z-index 1
+    +above($breakpoints.xxl)
+      font-size: 16px
+    .header
+      &__inner
+        padding: 20px 0
+
+  &__content
+    flex: 1
+    &--layout
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column

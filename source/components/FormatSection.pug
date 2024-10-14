@@ -1,0 +1,53 @@
+section.format-section
+  .wrapper
+    .format-section__inner.text-center
+      h2.format-section__title.font-s-48 О доступных форматах для успешного старта
+
+      .format-section__cards.swiper-format
+        .format-section__cards-list.swiper-wrapper
+          .format-section__cards-item.swiper-slide
+            .format-section__card.border-r-16
+              .format-section__card-title.font-s-22.font-f-demi Магазин
+              .format-section__card-description.font-s-20.font-f-med Площадь: 45-50 м2 
+                br.d-block
+                |Скачайте подробное описание формата 
+                br
+                |и финансовую модель
+              .format-section__card-feedback
+                .feedback
+                  form(data-feedback-form).feedback__form
+                    .feedback__list
+                      .feedback__item
+                        .input
+                          input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+                      .feedback__item
+                        .input
+                          input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+                      .feedback__item
+                        button.btn(type="submit")
+                          span.text-up Скачать
+                    input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          .format-section__cards-item.swiper-slide
+            .format-section__card.border-r-16
+              .format-section__card-title.font-s-22.font-f-demi Мини-магазин
+              .format-section__card-description.font-s-20.font-f-med Площадь: 45-50 м2 
+                br.d-block
+                |Скачайте подробное описание формата 
+                br
+                |и финансовую модель
+              .format-section__card-feedback
+                .feedback
+                  form(data-feedback-form).feedback__form
+                    .feedback__list
+                      .feedback__item
+                        .input
+                          input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+                      .feedback__item
+                        .input
+                          input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+                      .feedback__item
+                        button.btn(type="submit")
+                          span.text-up Скачать
+                    input(type="text" name="honeyfield" class="honeypot" style="display:none")
+
+        .format-section__cards-progress.swiper-progress.format-pagination

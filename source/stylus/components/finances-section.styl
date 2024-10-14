@@ -1,0 +1,171 @@
+.finances-section
+  background-image: url('../images/finances-bg.svg')
+  background-repeat: no-repeat
+  background-position: calc(50% - 312px) center
+  background-size: cover
+  background-color: #3B443C
+  color: $color-grey-2
+  +above($breakpoints.sm)
+    background-position: center
+
+  &__inner
+    position relative
+    z-index 1
+    padding: 50px 0
+    +above($breakpoints.sm)
+      padding: 50px 0 60px 0
+    +above($breakpoints.md)
+      padding: 70px 0 80px 0
+    +above($breakpoints.xxl)
+      padding: 84px 0 108px 0
+
+  &__title
+    margin: 0 -10px 24px -10px
+    +above($breakpoints.sm)
+      margin: 0 0 36px 0
+    +above($breakpoints.md)
+      margin: 0 0 50px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 73px 0
+
+  &__cards
+    width 234px
+    margin: 0 auto 30px auto
+    +above($breakpoints.sm)
+      position: unset !important
+      perspective: unset !important
+      width unset
+      margin: 0 0 30px 0
+    +above($breakpoints.md)
+      margin: 0 0 50px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 80px 0
+
+  &__cards-list
+    +above($breakpoints.sm)
+      position: unset !important
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      gap: 8px
+      transform: unset !important
+      transform-style: unset !important
+    +above($breakpoints.md)
+      gap: 12px
+    +above($breakpoints.xxl)
+      gap: 42px 20px
+
+  &__cards-item
+    +above($breakpoints.sm)
+      position relative
+      width auto !important
+
+  &__card
+    width: 234px;
+    height: 106px;
+    padding: 18px 0 0 43px;
+    position relative
+    z-index 1
+    background-color: #222;
+    overflow: hidden
+    +above($breakpoints.sm)
+      width: 226px;
+      height: 102px;
+      padding: 18px 0 0 40px;
+    +above($breakpoints.md)
+      width: 305px;
+      height: 130px;
+      padding: 26px 0 0 77px;
+    +above($breakpoints.xxl)
+      width 380px
+      height: 160px
+      padding: 36px 0 0 104px
+  br
+    display: block
+
+  &__card-num
+    position: absolute
+    z-index -1
+    line-height: normal
+    color: #3b443c;
+    top: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    left: -14px
+    font-size: 40px
+    +above($breakpoints.md)
+      font-size: 54px
+    +above($breakpoints.xxl)
+      font-size: 64px
+
+  &__card-title
+    margin: 0 0 6px 0
+    +above($breakpoints.md)
+      margin: 0 0 6px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 9px 0
+
+  &__feedback-title
+    margin: 0 0 14px 0
+    +above($breakpoints.md)
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 27px 0
+
+  &__frame
+    background-color: #222222
+    position relative
+    z-index 1
+    overflow: hidden
+    padding: 15px 14px 194px 14px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      padding: 22px 22px 24px 20px
+    +above($breakpoints.md)
+      padding: 26px 26px 30px 27px
+    +above($breakpoints.xxl)
+      padding: 32px 32px 46px 32px
+    br
+      display: none
+      +above($breakpoints.sm)
+        display: block
+
+  &__frame-title
+    margin: 0 0 6px 0
+    +above($breakpoints.md)
+      margin: 0 0 9px 0
+
+  &__frame-description
+    margin: 0 0 28px 0
+    +above($breakpoints.md)
+      margin: 0 0 40px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 65px 0
+
+  &__frame-image
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+    z-index -1
+    +above($breakpoints.sm)
+      left: auto
+      top: 0
+    img
+      height: auto
+      width 100%
+      +above($breakpoints.sm)
+        height: 100%
+        width auto
+
+  &__frame-button
+    width 216px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      margin: 0
+    +above($breakpoints.md)
+      width 260px
+    +above($breakpoints.xxl)
+      width 306px

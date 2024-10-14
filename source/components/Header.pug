@@ -1,0 +1,16 @@
+mixin header()
+  header.header
+    .wrapper
+      .header__inner
+        .header__container
+          .header__logo
+            img(src="images/logo-main.png" loading="lazy" alt="logo" width="146" height="135").d-block
+          .header__description.font-s-14
+            span.font-g-s-bold РУМИТ
+            br
+            |Франшиза сети детских
+            br
+            |развивающих клубов
+
+        .header__connection
+          +connection()

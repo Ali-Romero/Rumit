@@ -1,0 +1,135 @@
+.gallery-section
+  &__wrapper
+    margin: 0 auto
+    width 300px
+    +above($breakpoints.sm)
+      width 654px
+    +above($breakpoints.md)
+      width 873px
+    +above($breakpoints.xxl)
+      width 1240px
+
+  &__inner
+    padding: 50px 0
+    margin: 0 -6px
+    +above($breakpoints.sm)
+      margin: 0
+    +above($breakpoints.md)
+      padding: 70px 0
+    +above($breakpoints.xxl)
+      padding: 117px 0
+
+  &__title
+    margin: 0 0 24px 0
+    +above($breakpoints.sm)
+      margin: 0 0 26px 0
+    +above($breakpoints.md)
+      margin: 0 0 38px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 64px 0
+
+  &__swiper-content
+    position relative
+    z-index 1
+    margin: 0 0 28px 0
+
+  &__swiper
+    width 230px
+    margin: 0 auto
+    border-radius: 14px
+    overflow: hidden
+    +above($breakpoints.sm)
+      width unset
+      margin: 0
+    +above($breakpoints.xxl)
+      border-radius: 20px
+
+  &__swiper-image
+    background-color: #fffdf6;
+    width 230px
+    height: 260px
+    +above($breakpoints.sm)
+      width 218px
+      height: 240px
+    +above($breakpoints.md)
+      width 290px
+      height: 320px
+    +above($breakpoints.xxl)
+      width: 414px;
+      height: 487px;
+    img
+      height: auto
+      width 100%
+      object-fit: cover
+
+  &__swiper-controll
+    position: absolute
+    top: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 0
+    margin: auto 0
+    left: -7px
+    right -7px
+    +above($breakpoints.sm)
+      left: -40px
+      right -40px
+    +above($breakpoints.md)
+      left: -48px
+      right -48px
+    +above($breakpoints.xxl)
+      left: -68px
+      right -68px
+
+  &__swiper-btn
+    border-radius: 100%
+    background-color: $color-white
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor pointer
+    transition: 0.3s
+    transform: scale(1)
+    width 38px
+    height: 38px
+    +above($breakpoints.sm)
+      width 32px
+      height: 32px
+    +above($breakpoints.md)
+      width 40px
+      height: 40px
+    +above($breakpoints.xxl)
+      width 56px
+      height: 56px
+    img
+      height: auto
+      width 16px
+      +above($breakpoints.md)
+        width 20px
+      +above($breakpoints.xxl)
+        width 22px
+    &:hover
+      transform: scale(1.2)
+    &--next
+      img
+        transform: rotate(180deg)
+
+  &__swiper-bullets
+    position relative
+    display: flex
+    justify-content: center
+    top: auto !important
+    bottom: auto !important
+    left: auto !important
+    .swiper-pagination-bullet
+      background: $color-white
+      opacity 1
+      width 7px
+      height: 7px
+      +above($breakpoints.sm)
+        width 9px
+        height: 9px
+    .swiper-pagination-bullet-active
+      background: #3b443c;

@@ -1,0 +1,46 @@
+section.about-section
+  .wrapper
+    .about-section__inner
+      h2.about-section__title.font-s-48.text-center О концепции магазина
+
+      .about-section__info.font-s-24.border-r-20.font-f-light
+        div Магазин «LAMANBORZ» был открыт в 2007 году в г. Грозный. Мы занимаемся продажей ножей, 
+          |национального оружия (шашки, кинжалы), сувенирной продукции, пневматического оружия, оптики, луков, 
+          |арбалетов, товаров для рыбалки, охоты и туризма. 
+        div В магазине есть тир, услуги по ремонту оптики и пневматики, 
+          |заточке ножей и нанесению памятных надписей лазерным гравером 
+          |на металле и других материалах. Концепция магазина предполагает, 
+          |что посетители могут найти все необходимое в одном месте. 
+          |Все товары можно взять в руки, потрогать и протестировать, при необходимости настроить и индивидуально оформить.
+        div Поскольку в настоящее время растет интерес к туризму, холодному оружию, 
+          |авторским сувенирам и продукции для походов и выживания, наши товары продолжают быть актуальными и востребованными, 
+          |а количество покупателей в магазине растет с каждым годом. Запуская магазин по франшизе «LAMANBORZ», 
+          |вы можете стать частью сильной команды и быстро перейти к масштабированию и росту вашего собственного бизнеса.
+
+      .about-section__frame.border-r-20
+        .about-section__frame-info
+          .about-section__frame-description Напишите нам!
+          .about-section__frame-title.font-s-36.font-f-heavy Будем рады ответить 
+            br
+            |на ваши вопросы 
+            br
+            |по франшизе!
+        .about-section__frame-feedback
+          .feedback.border-r-20
+            form(data-feedback-form).feedback__form
+              .feedback__list
+                .feedback__item
+                  .input
+                    textarea(name="answer" placeholder="Ваш вопрос").input__field.input__field--textarea
+                .feedback__item
+                  .input
+                    input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+                .feedback__item
+                  .input
+                    input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+                .feedback__item
+                  button.btn(type="submit")
+                    span.text-up Задать вопрос команде
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+      .about-section__image
+        img(src="images/about-image.png" loading="lazy" alt="image" width="543" height="765").d-block
