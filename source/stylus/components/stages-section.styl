@@ -1,0 +1,248 @@
+.stages-section
+  background-image: url('../images/stages-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color: $color-blue-1
+  color: $color-white
+
+  &__inner
+    padding: 50px 0
+    +above($breakpoints.sm)
+      padding: 60px 0 80px 0
+    +above($breakpoints.md)
+      padding: 80px 0 115px 0
+    +above($breakpoints.xxl)
+      padding: 108px 0 175px 0
+
+  &__title
+    margin: 0 0 14px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 20px 0
+
+  &__title-helper
+    margin: 0 0 24px 0
+    +above($breakpoints.sm)
+      margin: 0 0 30px 0
+    +above($breakpoints.md)
+      margin: 0 0 46px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 66px 0
+
+  &__info
+    width 300px
+    margin: 0 auto 40px auto
+    +above($breakpoints.sm)
+      width unset
+      margin: 0 0 40px 0
+    +above($breakpoints.md)
+      margin: 0 0 60px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 80px 0
+
+  &__info-bullets
+    justify-content: flex-start !important
+    &.swiper-bullets
+      .swiper-pagination-bullet,
+      .swiper-pagination-bullet-active
+        background: $color-white !important
+
+
+  &__info-list
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap: 20px 6px
+    +above($breakpoints.md)
+      gap: 30px 28px
+    +above($breakpoints.xxl)
+      gap: 41px 62px
+
+  &__info-item
+    +above($breakpoints.sm)
+      width auto !important
+      &:nth-child(1)
+        order: 1
+      &:nth-child(2)
+        order: 3
+      &:nth-child(3)
+        order: 5
+      &:nth-child(4)
+        order: 7
+      &:nth-child(5)
+        order: 9
+      &:nth-child(6)
+        order: 2
+      &:nth-child(7)
+        order: 4
+      &:nth-child(8)
+        order: 6
+      &:nth-child(9)
+        order: 8
+    &:nth-child(5),
+    &:nth-child(9)
+      .stages-section__info-pointer
+        display: none !important
+
+  &__info-container
+    display: flex
+    align-items: center
+    justify-content: center
+    position relative
+    z-index 1
+    gap: 10px
+    width 300px
+    height: 100px
+    line-height: 120%
+    backdrop-filter: blur(50px)
+    background: rgba(31, 59, 80, 0.598)
+    padding: 14px 10px
+    border-radius: 10px
+    overflow: hidden
+    +above($breakpoints.sm)
+      background: none
+      height: auto
+      backdrop-filter: blur(0px)
+      padding: 0
+      overflow: unset
+      border-radius: 0px
+      justify-content: flex-start
+      width unset
+      min-width: 331px
+      gap: 10px
+    +above($breakpoints.md)
+      min-width: 406px
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 30px
+      min-width: 496px
+
+  &__info-box
+    border: 1px solid $color-white
+    border-radius: 6px
+    position relative
+    z-index 1
+    width: 42px;
+    height: 42px;
+    padding: 5px;
+    +above($breakpoints.sm)
+      width: 60px;
+      height: 60px;
+      padding: 6px;
+      border-radius: 10px
+    +above($breakpoints.md)
+      border-radius: 16px
+      width 80px
+      height: 80px
+      padding: 10px
+    +above($breakpoints.xxl)
+      border-radius: 20px
+      width 101px
+      height: 101px
+      padding: 14px
+
+  &__info-num
+    border-radius: inherit
+    background-color: $color-orange-1
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: "Gilroy-Medium"
+    height: 100%
+    width 100%
+    line-height: 100%
+    font-size: 20px
+    +above($breakpoints.sm)
+      font-size: 22px
+    +above($breakpoints.md)
+      font-size: 26px
+    +above($breakpoints.xxl)
+      font-size: 32px
+
+  &__info-pointer
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      z-index -1
+      left: 0
+      right 0
+      top: 100%
+      margin: 5px 0 0 0
+    +above($breakpoints.md)
+      margin: 7px 0 0 0
+    +above($breakpoints.xxl)
+      margin: 9px 0 0 0
+    img
+      height: auto
+      margin: 0 auto
+      width 5px
+      +above($breakpoints.md)
+        width 6px
+      +above($breakpoints.xxl)
+        width 8px
+
+  &__info-description
+    width 226px
+    +above($breakpoints.sm)
+      width unset
+
+  &__frame
+    position relative
+    z-index 1
+    background-image: url('../images/stages-frame-bg.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-color: $color-orange-1
+    padding: 60px 5px 18px 5px
+    +above($breakpoints.sm)
+      padding: 18px 18px 20px 22px
+      width 580px
+    +above($breakpoints.md)
+      width 742px
+      padding: 24px 24px 25px 30px
+    +above($breakpoints.xxl)
+      width 940px
+      padding: 42px 40px 37px 40px
+
+  &__frame-description
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+
+  &__frame-button
+    width 260px
+    margin: 0 auto 12px auto
+    +above($breakpoints.sm)
+      margin: 0 0 14px 0
+      width 246px
+    +above($breakpoints.md)
+      margin: 0 0 21px 0
+      width 256px
+    +above($breakpoints.xxl)
+      margin: 0 0 31px 0
+      width 310px
+    .btn
+      background: $color-blue-1
+
+  &__frame-image
+    position: absolute
+    z-index -1
+    right: 12px;
+    top: -59px;
+    +above($breakpoints.sm)
+      top: auto
+      bottom: 0
+      right -20px
+    +above($breakpoints.xxl)
+      right -38px
+    img
+      height: auto
+      width 154px
+      +above($breakpoints.sm)
+        width 236px
+      +above($breakpoints.md)
+        width 344px
+      +above($breakpoints.xxl)
+        width 452px
