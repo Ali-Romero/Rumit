@@ -151,6 +151,7 @@ function initSwiperInvestments() {
     speed: 450,
     effect: 'coverflow',
     rewind: true,
+    updateOnWindowResize: true,
     pagination: {
       el: '.investments-pagination',
       clickable: true,
