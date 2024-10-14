@@ -1,0 +1,89 @@
+.feedback-card
+  color: $color-black
+  background-color: $color-white
+  border-radius: 13px
+  width 260px
+  padding: 19px 14px 22px 14px
+  +above($breakpoints.sm)
+    width 228px
+    padding: 19px 10px 22px 10px
+  +above($breakpoints.md)
+    width 306px
+    padding: 24px 22px 32px 22px
+  +above($breakpoints.xxl)
+    border-radius: 15px
+    width 380px
+    padding: 30px 30px 48px 30px
+  br
+    display: none
+    +above($breakpoints.md)
+      display: block
+
+  &__name
+    background-color: #DAC6BE
+    border-radius: 8px
+    padding: 10px 0
+    +above($breakpoints.md)
+      padding: 12px 0
+    +above($breakpoints.xxl)
+      padding: 16px 0
+    &--1
+      background-color: rgba(225, 185, 177, 0.33);
+    &--2
+      background-color: rgba(225, 185, 177, 0.56);
+    &--3
+      background-color: #e1b9b1;
+
+  &__description
+    margin: 20px 0
+    +above($breakpoints.md)
+      margin: 24px 0
+    +above($breakpoints.xxl)
+      margin: 32px 0
+
+  &__form
+    .feedback
+      padding: 0
+      border-radius: 0px
+      background-color: unset
+      &__item
+        width 100%
+        &:last-child
+          width 100%
+        .btn,
+        .input__field
+          height: 44px
+          +above($breakpoints.sm)
+            height: 40px
+          +above($breakpoints.md)
+            height: 50px
+          +above($breakpoints.xxl)
+            height: 60px
+        .btn
+          font-size: 14px
+          background: $color-blue-1
+          +above($breakpoints.md)
+            font-size: 16px
+          +above($breakpoints.xxl)
+            font-size: 20px
+        .input__field
+          color: $color-black
+          border: 1.02px solid $color-black
+          &::-ms-input-placeholder
+            color: $color-black
+          &::-moz-placeholder
+            color: $color-black
+          &::-webkit-input-placeholder
+            color: $color-black
+          &::placeholder
+            color: $color-black
+          &.error
+            color: $color-error
+            &::placeholder
+              color: $color-error
+            &::-ms-input-placeholder
+              color: $color-error
+            &::-moz-placeholder
+              color: $color-error
+            &::-webkit-input-placeholder
+              color: $color-error

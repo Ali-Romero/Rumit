@@ -146,9 +146,46 @@ function initSwiperStages() {
   })
 }
 
+function initSwiperInvestments() {
+  const swiper = new Swiper('.swiper-investments', {
+    speed: 450,
+    effect: 'coverflow',
+    rewind: true,
+    pagination: {
+      el: '.investments-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      200: {
+        slideToClickedSlide: true,
+        coverflowEffect: {
+          rotate: 60,
+          stretch: 14,
+          depth: 500,
+          scale: 0.7,
+          modifier: 1,
+          slideShadows: false,
+        },
+        allowTouchMove: true,
+      },
+      768: {
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 0,
+          slideShadows: false,
+        },
+        allowTouchMove: false,
+      },
+    },
+  })
+}
+
 $(document).ready(function () {
   initSwiperMain()
   initSwiperFinances()
   initSwiperCauses()
   initSwiperStages()
+  initSwiperInvestments()
 })
