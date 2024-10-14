@@ -72,42 +72,42 @@ function initSwiperFinances() {
   })
 }
 
-// function initSwiperFormat() {
-//   const swiper = new Swiper('.swiper-format', {
-//     speed: 450,
-//     effect: 'coverflow',
-//     rewind: true,
-//     updateOnWindowResize: true,
-//     pagination: {
-//       el: '.format-pagination',
-//       type: 'progressbar',
-//     },
-//     breakpoints: {
-//       200: {
-//         slideToClickedSlide: true,
-//         coverflowEffect: {
-//           rotate: 60,
-//           stretch: 14,
-//           depth: 500,
-//           scale: 0.7,
-//           modifier: 1,
-//           slideShadows: false,
-//         },
-//         allowTouchMove: true,
-//       },
-//       768: {
-//         coverflowEffect: {
-//           rotate: 0,
-//           stretch: 0,
-//           depth: 0,
-//           modifier: 0,
-//           slideShadows: false,
-//         },
-//         allowTouchMove: false,
-//       },
-//     },
-//   })
-// }
+function initSwiperCauses() {
+  const swiper = new Swiper('.swiper-causes', {
+    speed: 450,
+    effect: 'coverflow',
+    rewind: true,
+    updateOnWindowResize: true,
+    pagination: {
+      el: '.causes-pagination',
+      type: 'progressbar',
+    },
+    breakpoints: {
+      200: {
+        slideToClickedSlide: true,
+        coverflowEffect: {
+          rotate: 60,
+          stretch: 14,
+          depth: 500,
+          scale: 0.7,
+          modifier: 1,
+          slideShadows: false,
+        },
+        allowTouchMove: true,
+      },
+      768: {
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 0,
+          slideShadows: false,
+        },
+        allowTouchMove: false,
+      },
+    },
+  })
+}
 
 // function initSwiperGallery() {
 //   const swiper = new Swiper('.swiper-gallery', {
@@ -191,7 +191,7 @@ function initSwiperFinances() {
 $(document).ready(function () {
   initSwiperMain()
   initSwiperFinances()
-  // initSwiperFormat()
+  initSwiperCauses()
   // initSwiperGallery()
   // initSwiperSupport()
 })

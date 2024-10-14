@@ -1,0 +1,51 @@
+section.causes-section
+  .wrapper
+    .causes-section__inner
+      h2.causes-section__title.font-s-40.text-center 4 причины открыть клуб 
+        br
+        |детского развития РУМИТ
+
+      .causes-section__cards.font-g-med.color-blue-1.swiper-causes
+        .causes-section__cards-list.swiper-wrapper
+          .causes-section__cards-item.swiper-slide
+            .causes-section__card.border-r-20
+              div.font-s-32.font-g-s-bold.text-up Спрос
+              span Дети — это самое дорогое. Для их развития родители не 
+                |будут жалеть денег, поэтому вы всегда будете обеспечены клиентами и прибылью
+          .causes-section__cards-item.swiper-slide
+            .causes-section__card.border-r-20
+              div.font-s-32.font-g-s-bold.text-up Актуальность
+              span Подрастающему поколению не достаточно только школьного образования, 
+                |поэтому ваш клуб стабильно будет приносить доход
+          .causes-section__cards-item.swiper-slide
+            .causes-section__card.border-r-20
+              div.font-s-32.font-g-s-bold.text-up Надежность
+              span Открывая студию вы ничем не рискуете, так как при минимальных 
+                |вложениях клуб будет приносить большой доход и быстро окупится
+          .causes-section__cards-item.swiper-slide
+            .causes-section__card.border-r-20
+              div.font-s-32.font-g-s-bold.text-up Самореализация
+              span Вы будете делать доброе и нужное дело, иметь статус 
+                |владельца собственного бизнеса и получать достойное вознаграждение
+        .causes-section__cards-progress.swiper-progress.causes-pagination
+
+      .causes-section__feedback
+        .feedback.border-r-20
+          form(data-feedback-form).feedback__form
+            .feedback__description.font-s-20.font-g-med.color-white Узнайте о других преимуществах 
+              br
+              |бизнеса по франшизе РУМИТ
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Скачать
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+
+      .causes-section__image
+        img(src="images/causes-image.png" loading="lazy" alt="image" width="627" height="773").d-block

@@ -1,0 +1,111 @@
+.causes-section
+  background-image: url('../images/causes-bg.svg')
+  background-repeat: no-repeat
+  background-position: calc(50% - 274px) bottom
+  background-size: cover;
+  background-color: $color-blue-1
+  color: $color-white
+  +above($breakpoints.sm)
+    background-position: center bottom
+
+  &__inner
+    position relative
+    padding: 50px 0 306px 0
+    +above($breakpoints.sm)
+      padding: 64px 0
+    +above($breakpoints.md)
+      padding: 90px 0
+    +above($breakpoints.xxl)
+      padding: 126px 0
+
+  &__image
+    position: absolute
+    bottom: 0
+    right calc(50% - 131px)
+    +above($breakpoints.sm)
+      right -162px
+    +above($breakpoints.md)
+      right -188px
+    +above($breakpoints.xxl)
+      right -351px
+    img
+      height: auto
+      width 274px
+      +above($breakpoints.sm)
+        width 336px
+      +above($breakpoints.md)
+        width 368px
+      +above($breakpoints.xxl)
+        width 620px
+
+  &__cards
+    margin: 28px auto
+    width 290px
+    +above($breakpoints.sm)
+      margin: 32px 0
+      width unset
+    +above($breakpoints.md)
+      margin: 50px 0
+    +above($breakpoints.xxl)
+      margin: 77px 0
+
+  &__cards-list
+    display: flex
+    +above($breakpoints.sm)
+      flex-wrap: wrap
+      justify-content: center
+      gap: 14px
+    +above($breakpoints.xxl)
+      gap: 18px
+
+  &__cards-item
+    +above($breakpoints.sm)
+      width auto !important
+
+  &__card
+    background-color: $color-white
+    width 290px
+    padding: 22px 8px 16px 14px;
+    +above($breakpoints.sm)
+      width 341px
+      height: 144px
+      padding: 22px 20px 10px 15px
+    +above($breakpoints.md)
+      padding: 22px 20px 10px 18px
+      width 463px
+      height: 162px
+    +above($breakpoints.xxl)
+      width 581px
+      height: 196px
+      padding: 28px 26px 10px 28px
+    div
+      margin: 0 0 13px 0
+      +above($breakpoints.md)
+        margin: 0 0 28px 0
+      +above($breakpoints.xxl)
+        margin: 0 0 37px 0
+
+  &__feedback
+    display: flex
+    justify-content: center
+    .feedback
+      background-color: $color-orange-1
+      display: inline-block
+      padding: 18px 16px
+      +above($breakpoints.md)
+        padding: 22px
+      +above($breakpoints.xxl)
+        padding: 30px
+      &__description
+        margin: 0 0 16px 0
+        text-align: center
+        +above($breakpoints.sm)
+          text-align: left
+        +above($breakpoints.md)
+          margin: 0 0 18px 0
+        +above($breakpoints.xxl)
+          margin: 0 0 24px 0
+      &__item
+        .btn
+          background: $color-white
+          color: $color-blue-1
