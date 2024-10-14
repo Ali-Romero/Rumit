@@ -15,9 +15,10 @@ section.location-section
             .feedback__list
               .feedback__item
                 .input.js-input-city.input--border
-                  input(type="text" name="city" placeholder="Название города").input__field
+                  input(type="text" name="city" placeholder="Название города" autocomplete="off").input__field
                   .input__progress.js-input-city-progress
                     span.js-input-city-percent 0%
               .feedback__item
                 button.btn(type="submit")
                   span Получить список локаций
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")

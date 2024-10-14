@@ -3,7 +3,7 @@
   background-repeat: no-repeat
   background-size: cover
   color: $color-white
-  background-color: #3B443C
+  background-color:  $color-blue-1
   background-position: calc(50% - 62px) center
   +above($breakpoints.sm)
     background-position: center
@@ -11,13 +11,35 @@
   &__inner
     padding: 50px 0 40px 0
     text-align: center
+    position relative
+    z-index 1
     +above($breakpoints.sm)
       text-align: left
       padding: 40px 0 50px 0
     +above($breakpoints.md)
-      padding: 50px 0 60px 0
+      padding: 50px 0 80px 0
     +above($breakpoints.xxl)
-      padding: 70px 0 136px 0
+      padding: 86px 0 150px 0
+
+  &__image
+    position: absolute
+    z-index -1
+    bottom: 234px;
+    right: calc(50% - 206px)
+    +above($breakpoints.sm)
+      bottom: 0
+      right -30px
+    +above($breakpoints.xxl)
+      right -159px
+    img
+      height: auto
+      width 200px
+      +above($breakpoints.sm)
+        width 264px
+      +above($breakpoints.md)
+        width 350px
+      +above($breakpoints.xxl)
+        width 505px
 
   &__logo
     margin: 0 0 14px 0
@@ -26,33 +48,35 @@
     +above($breakpoints.md)
       margin: 0 0 20px 0
     +above($breakpoints.xxl)
-      margin: 0 0 36px 0
+      margin: 0 0 56px 0
     img
       height: auto
-      width 128px
-      margin: 0 auto
+      width 88px
       +above($breakpoints.sm)
-        margin: 0
-        width 150px
+        width 100px
       +above($breakpoints.md)
-        width 220px
+        width 120px
       +above($breakpoints.xxl)
-        width 300px
+        width 184px
 
   &__title
     margin: 0 0 20px 0
+    text-align: left
+    width 200px
+    +above($breakpoints.sm)
+      width unset
     +above($breakpoints.md)
       margin: 0 0 30px 0
     +above($breakpoints.xxl)
-      margin: 0 0 58px 0
+      margin: 0 0 42px 0
 
   &__feedback
     .feedback
-      background: #1B1B1B
+      background: $color-orange-1
       display: inline-block
-      padding: 20px 18px
+      padding: 18px
       +above($breakpoints.md)
-        padding: 26px 21px
+        padding: 22px 21px
       +above($breakpoints.xxl)
         padding: 32px 30px
       &__list
@@ -60,12 +84,9 @@
         +above($breakpoints.sm)
           justify-content: flex-start
       &__item
-        +above($breakpoints.sm)
-          width 180px
-        +above($breakpoints.md)
-          width 212px
-        +above($breakpoints.xxl)
-          width 238px
+        .btn
+          background: $color-white
+          color: $color-blue-1
 
       &__description
         margin: 0 0 16px 0

@@ -1,54 +1,55 @@
 .form-modal
   &__feedback
-    background: #333332;
     color: $color-white
-    border-radius: 10px
-    padding: 30px 8px 17px 8px;
+    background-color: $color-blue-1
+    border-radius: 14px
+    padding: 36px 6px 17px 6px;
     +above($breakpoints.sm)
-      padding: 38px 10px 20px 10px
-      border-radius: 14px
+      padding: 38px 14px 20px 14px
     +above($breakpoints.xxl)
-      padding: 40px 14px 26px 14px
+      padding: 40px
       border-radius: 20px
 
   &__info-title
-    font-size: 21px;
-    line-height: 120%
-    margin: 0 0 14px 0
-    font-family: "FuturaPT-Medium"
-    font-weight: 500
+    font-size: 17px;
+    line-height: 130%
+    margin: 0 -8px 14px -8px
+    font-family: "Gilroy-Bold"
+    font-weight: 700
+    text-transform: uppercase
+    +above($breakpoints.sm)
+      margin: 0 0 14px 0
     +above($breakpoints.md)
-      font-size: 23px
-      margin: 0 0 18px 0
+      font-size: 19px
     +above($breakpoints.xxl)
       margin: 0 0 20px 0
-      font-size: 27px
+      font-size: 22px
     br
       display: block
 
   &__feedback-item
-    max-width: 250px
+    max-width: 270px
     margin: 0 auto
-    height: 48px
-    margin: 0 auto 5px auto
     +above($breakpoints.sm)
-      max-width: 246px
-      height: 48px
-      margin: 0 auto 4px auto
+      max-width: 240px
     +above($breakpoints.md)
-      margin: 0 auto 6px auto
       max-width: 280px
-      height: 50px
     +above($breakpoints.xxl)
-      margin: 0 auto 10px auto
-      height: 60px
       max-width: 330px
-    &:last-child
-      margin: 0 auto
-    .btn
-      height: 100%
+
+  &__feedback-input
+    height: 56px
+    margin-bottom: 7px
+    +above($breakpoints.sm)
+      margin-bottom: 8px
+      height: 48px
+    +above($breakpoints.md)
+      height: 52px
+    +above($breakpoints.xxl)
+      height: 60px
+      margin-bottom: 10px
     .input
-      height: 100%
+      border: none
       &__field
         height: 100%
 
@@ -56,14 +57,10 @@
     margin-bottom: 14px
 
   &__agree
-    margin: 14px 0 0 0
-    line-height: normal
-    font-size: 13px
+    font-size: 11px;
+    line-height: 13px;
     +above($breakpoints.md)
-      font-size: 14px
-    +above($breakpoints.xxl)
-      font-size: 16px
-
-  &__agree-link
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+      font-size: 13px;
+      line-height: 15px;
+    a
+      text-decoration: underline

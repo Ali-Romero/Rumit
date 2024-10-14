@@ -29,16 +29,18 @@
   &--thanks
     font-size: 13px
     line-height: 130%
-    background-image: url('../images/about-bg.jpg')
+    background-image: url('../images/main-bg.svg')
     background-repeat: no-repeat
-    background-position: center
+    background-position: left center
     background-size: cover
-    color: $color-white
-    background-color:  #333332;
+    color: $color-blue-1
+    background-color:  $color-blue-1
     position relative
     z-index 1
     +above($breakpoints.xxl)
       font-size: 16px
+    .footer
+      background: none
     .header
       &__inner
         padding: 20px 0
