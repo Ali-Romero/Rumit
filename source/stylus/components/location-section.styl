@@ -1,0 +1,68 @@
+.location-section
+  color: $color-blue-1
+
+  &__inner
+    padding: 50px 0
+    +above($breakpoints.sm)
+      padding: 70px 0
+    +above($breakpoints.md)
+      padding: 90px 0
+    +above($breakpoints.xxl)
+      padding: 145px 0
+
+  &__title
+    margin: 0 0 14px 0
+    +above($breakpoints.md)
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 31px 0
+
+  &__title-helper
+    margin: 0 0 30px 0
+    line-height: 94% !important
+    +above($breakpoints.md)
+      margin: 0 0 40px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 60px 0
+
+  &__feedback
+    .feedback
+      &__item
+        width 260px
+        +above($breakpoints.sm)
+          width 250px
+        +above($breakpoints.md)
+          width 300px
+        +above($breakpoints.xxl)
+          width 414px
+        &:last-child
+          width 260px
+          +above($breakpoints.sm)
+            width 260px
+          +above($breakpoints.md)
+            width 290px
+          +above($breakpoints.xxl)
+            width 362px
+        .input__field
+          color: $color-blue-1
+          &::-ms-input-placeholder
+            color: #1f3b50;
+          &::-moz-placeholder
+            color: #1f3b50;
+          &::-webkit-input-placeholder
+            color: #1f3b50;
+          &::placeholder
+            color: #1f3b50;
+          &.error
+            color: $color-error
+            &::placeholder
+              color: $color-error
+            &::-ms-input-placeholder
+              color: $color-error
+            &::-moz-placeholder
+              color: $color-error
+            &::-webkit-input-placeholder
+              color: $color-error
+        .btn
+          background: $color-blue-1
+          font-size: 14px

@@ -1,9 +1,12 @@
 .double-section
-  background-image: url('../images/double-bg.jpg')
-  background-repeat: no-repeat
-  background-position: calc(50% - 157px) center
-  background-size: cover
-  background-color: #1B1B1B
-  color: $color-white
-  +above($breakpoints.sm)
-    background-position: center
+  background-color: $color-blue-1
+
+  &__wrapper
+    background-color: $color-white
+    border-radius: 70px 0 0 0
+    +above($breakpoints.sm)
+      border-radius: 140px 0 0 0
+    +above($breakpoints.md)
+      border-radius: 250px 0 0 0
+    +above($breakpoints.xxl)
+      border-radius: 350px 0 0 0

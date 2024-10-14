@@ -1,0 +1,23 @@
+section.location-section
+  .wrapper
+    .location-section__inner
+      h2.location-section__title.font-s-40.text-center Сделайте первый шаг, узнайте лучшие места 
+        br
+        |для открытия РУМИТ
+
+      .location-section__title-helper.font-s-32.font-g-med.text-center Просто укажите название вашего города 
+        br
+        |и получите список удачных локаций
+
+      .location-section__feedback
+        .feedback
+          form(data-city-form).feedback__form
+            .feedback__list
+              .feedback__item
+                .input.js-input-city.input--border
+                  input(type="text" name="city" placeholder="Название города").input__field
+                  .input__progress.js-input-city-progress
+                    span.js-input-city-percent 0%
+              .feedback__item
+                button.btn(type="submit")
+                  span Получить список локаций
