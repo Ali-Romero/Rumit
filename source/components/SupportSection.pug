@@ -1,124 +1,74 @@
 section.support-section
   .wrapper
     .support-section__inner
-      h2.support-section__title.font-s-48.text-center О схеме запуска вашего первого магазина
+      h2.support-section__title.font-s-40.text-center Откройте собственный бизнес за 26 дней
+
+      .support-section__title-helper.font-s-24.font-g-med.text-center Команда РУМИТ поддержит вас 
+        br.d-block
+        |на всех этапах
 
       .support-section__content
-        .support-section__info.font-s-24.swiper-support
-          .support-section__info-list.swiper-wrapper
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 01
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Заключение 
-                  br
-                  |договора 
-                  br.d-block
-                  |франшизы
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 02
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Поиск 
-                  br
-                  |помещения
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 03
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Заключение 
-                  br.d-block
-                  |договора 
-                  br
-                  |аренды
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 04
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Ремонт и 
-                  br
-                  |оформление 
-                  br.d-block
-                  |помещения
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 05
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Поиск 
-                  br
-                  |персонала
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 06
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Доставка и монтаж 
-                  br
-                  |приобретенного 
-                  br.d-block
-                  |оборудования, мебели
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 07
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Формирование первичных 
-                  br
-                  |запасов товара и расходных 
-                  br
-                  |материалов
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 08
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Обучение 
-                  br
-                  |персонала
-            .support-section__info-item.swiper-slide
-              .support-section__info-container
-                .support-section__info-box
-                  .support-section__info-num
-                    span 09
-                  .support-section__info-pointer
-                    img(src="images/pointer-1.svg" loading="lazy" alt="pointer" width="8" height="23").d-block
-                .support-section__info-description Официальное 
-                  br
-                  |открытие
-          .support-section__info-progress.swiper-progress.support-pagination
+        .support-section__feedback
+          .feedback.border-r-20
+            form(data-feedback-form).feedback__form
+              .feedback__description.font-s-22.font-g-med.color-white Получите подробный план 
+                br
+                |по открытию РУМИТ
+              .feedback__list
+                .feedback__item
+                  .input
+                    input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+                .feedback__item
+                  .input
+                    input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+                .feedback__item
+                  button.btn(type="submit")
+                    span Получить
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              .feedback__image
+                img(src="images/support-image.png" loading="lazy" alt="image" width="243" height="221").d-block
 
-        .support-section__frame.border-r-20
-          .support-section__frame-description.font-s-24 Работаем строго по договору, 
-            br
-            |в котором описаны наши обязанности 
-            br
-            |и все условия сотрудничества
-          .support-section__frame-button
-            button.btn(data-remodal-target="modal-form-support")
-              span.text-up.font-f-heavy.font-s-18 Скачать
-          .support-section__frame-image
-            img(src="images/support-frame-img.png" loading="lazy" alt="image" width="362" height="246").d-block
-
-      .support-section__image
-        img(src="images/support-image.png" loading="lazy" alt="image" width="974" height="974").d-block
+        .support-section__info.font-g-med.font-s-20
+          ul
+            li
+              .support-section__info-icon
+                img(src="images/checked-2.svg" loading="lazy" alt="icon" width="28" height="28").d-block
+              .support-section__info-description Предоставим 
+                br
+                |дистанционное обучение
+            li
+              .support-section__info-icon
+                img(src="images/checked-2.svg" loading="lazy" alt="icon" width="28" height="28").d-block
+              .support-section__info-description Обеспечим ежегодные 
+                br
+                |встречи франчайзи
+            li
+              .support-section__info-icon
+                img(src="images/checked-2.svg" loading="lazy" alt="icon" width="28" height="28").d-block
+              .support-section__info-description Направим команду 
+                br
+                |специалистов для запуска 
+                br
+                |бизнеса (по договоренности)
+            li
+              .support-section__info-icon
+                img(src="images/checked-2.svg" loading="lazy" alt="icon" width="28" height="28").d-block
+              .support-section__info-description Добавим на горячую 
+                br
+                |линию и в закрытое 
+                br
+                |сообщество
+            li
+              .support-section__info-icon
+                img(src="images/checked-2.svg" loading="lazy" alt="icon" width="28" height="28").d-block
+              .support-section__info-description Подключим к 
+                br
+                |индивидуальному чат
+            li
+              .support-section__info-icon
+                img(src="images/checked-2.svg" loading="lazy" alt="icon" width="28" height="28").d-block
+              .support-section__info-description Дадим любые 
+                br
+                |консультации касательно 
+                br
+                |нашей деятельности
