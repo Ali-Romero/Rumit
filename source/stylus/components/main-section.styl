@@ -1,11 +1,13 @@
 .main-section
   background-image: url('../images/main-bg.svg')
   background-repeat: no-repeat
-  background-position: center
-  background-size: cover
+  background-position: calc(50% - -480px) bottom;
+  background-size: cover;
   color: $color-blue-1
   overflow: hidden
   background-color: $color-white
+  +above($breakpoints.sm)
+    background-position: center
 
   &__inner
     padding: 10px 0 294px 0

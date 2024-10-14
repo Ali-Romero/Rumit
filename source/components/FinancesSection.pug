@@ -1,62 +1,105 @@
 section.finances-section
   .wrapper
     .finances-section__inner
-      h2.finances-section__title.font-s-48.text-center О бизнес-модели «LAMANBORZ»
+      h2.finances-section__title.font-s-40.text-center Франшиза РУМИТ в цифрах
 
-      .finances-section__cards.swiper-finances.font-s-18.font-f-med
-        .finances-section__cards-list.swiper-wrapper
-          .finances-section__cards-item.swiper-slide
-            .finances-section__card.border-r-16
-              .finances-section__card-num.font-g-bold 01
-              .finances-section__card-title.font-f-demi.font-s-26 от 122 000 рублей
-              .finances-section__card-description средняя чистая ежемесячная 
-                br
-                |прибыль
-          .finances-section__cards-item.swiper-slide
-            .finances-section__card.border-r-16
-              .finances-section__card-num.font-g-bold 02
-              .finances-section__card-title.font-f-demi.font-s-26 от 0,8 млн рублей
-              .finances-section__card-description первоначальные 
-                br
-                |инвестиции
-          .finances-section__cards-item.swiper-slide
-            .finances-section__card.border-r-16
-              .finances-section__card-num.font-g-bold 03
-              .finances-section__card-title.font-f-demi.font-s-26 от 1,46 млн рублей
-              .finances-section__card-description средняя чистая 
-                br
-                |годовая прибыль
-          .finances-section__cards-item.swiper-slide
-            .finances-section__card.border-r-16
-              .finances-section__card-num.font-g-bold 04
-              .finances-section__card-title.font-f-demi.font-s-26 от 19,9%
-              .finances-section__card-description рентабельность по 
-                br
-                |чистой прибыли
-          .finances-section__cards-item.swiper-slide
-            .finances-section__card.border-r-16
-              .finances-section__card-num.font-g-bold 05
-              .finances-section__card-title.font-f-demi.font-s-26 от 6 месяцев
-              .finances-section__card-description срок окупаемости 
-                br
-                |вашего бизнеса
-          .finances-section__cards-item.swiper-slide
-            .finances-section__card.border-r-16
-              .finances-section__card-num.font-g-bold 06
-              .finances-section__card-title.font-f-demi.font-s-26 1 месяц
-              .finances-section__card-description чтобы начать 
-                br
-                |зарабатывать
+      .finances-section__title-helper.font-s-24.text-center.font-g-med Сотрудничая с нами вы можете 
+        br
+        |рассчитывать на:
 
-        .finances-section__cards-bullets.swiper-bullets.finances-pagination
+      .finances-section__content
+        .finances-section__image-container
+          .finances-section__image
+            img(src="images/finances-image.jpg" loading="lazy" alt="image" width="512" height="531").d-block.border-r-20
+          .finances-section__image-decor
+            img(src="images/finances-decor.png" loading="lazy" alt="image" width="467" height="641").d-block.border-r-20
+        .finances-section__cards.swiper-finances.font-s-16
+          .finances-section__cards-list.swiper-wrapper
+            .finances-section__cards-item.swiper-slide
+              .finances-section__card.border-r-16
+                .finances-section__card-icon
+                  img(src="images/checked.svg" loading="lazy" alt="icon" width="46" height="46").d-block
+                .finances-section__card-description
+                  span.font-s-24.font-g-s-bold 48,7% 
+                  br
+                  |рентабельность по 
+                  br
+                  |чистой прибыли
+            .finances-section__cards-item.swiper-slide
+              .finances-section__card.border-r-16
+                .finances-section__card-icon
+                  img(src="images/checked.svg" loading="lazy" alt="icon" width="46" height="46").d-block
+                .finances-section__card-description
+                  span.font-s-24.font-g-s-bold от 197 000 рублей 
+                  br
+                  |средняя чистая ежемесячная 
+                  br
+                  |прибыль
+            .finances-section__cards-item.swiper-slide
+              .finances-section__card.border-r-16
+                .finances-section__card-icon
+                  img(src="images/checked.svg" loading="lazy" alt="icon" width="46" height="46").d-block
+                .finances-section__card-description
+                  span.font-s-24.font-g-s-bold от 0,68 млн рублей 
+                  br
+                  |первоначальные 
+                  br
+                  |инвестиции
+            .finances-section__cards-item.swiper-slide
+              .finances-section__card.border-r-16
+                .finances-section__card-icon
+                  img(src="images/checked.svg" loading="lazy" alt="icon" width="46" height="46").d-block
+                .finances-section__card-description
+                  span.font-s-24.font-g-s-bold 26 дней 
+                  br
+                  |чтобы начать 
+                  br
+                  |зарабатывать
+            .finances-section__cards-item.swiper-slide
+              .finances-section__card.border-r-16
+                .finances-section__card-icon
+                  img(src="images/checked.svg" loading="lazy" alt="icon" width="46" height="46").d-block
+                .finances-section__card-description
+                  span.font-s-24.font-g-s-bold от 2,36 млн рублей 
+                  br
+                  |средняя чистая 
+                  br
+                  |годовая прибыль
+            .finances-section__cards-item.swiper-slide
+              .finances-section__card.border-r-16
+                .finances-section__card-icon
+                  img(src="images/checked.svg" loading="lazy" alt="icon" width="46" height="46").d-block
+                .finances-section__card-description
+                  span.font-s-24.font-g-s-bold от 4 месяцев 
+                  br
+                  |срок окупаемости 
+                  br
+                  |вашего бизнеса
+
+          .finances-section__cards-bullets.swiper-bullets.finances-pagination
 
       .finances-section__frame.border-r-16
-        .finances-section__frame-title.font-f-book.font-s-32 Хотите получить  детальные расчеты 
-          br
-          |для вашего города и под ваш бюджет?
-        .finances-section__frame-description.font-s-20.font-f-light Скачайте финансовую модель франшизы
-        .finances-section__frame-button
-          button.btn(data-remodal-target="modal-form-finances")
-            span Скачать финансовую модель
+        .finances-section__frame-info
+          div.font-s-24.font-g-med Ознакомьтесь детально с финансовыми 
+            br
+            |расчетами вашего будущего бизнеса
+          h3.font-s-40.text-init Скачайте финансовую 
+            br
+            |модель РУМИТ
+        .finances-section__frame-feedback
+          .feedback.border-r-20
+            form(data-feedback-form).feedback__form
+              .feedback__list
+                .feedback__item
+                  .input
+                    input(type="text" name="name" autocomplete="off" placeholder="Ваше имя").input__field
+                .feedback__item
+                  .input
+                    input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваше телефон").input__field
+                .feedback__item
+                  button.btn(type="submit")
+                    span Получить
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+
         .finances-section__frame-image
-          img(src="images/finances-image.jpg" loading="lazy" alt="image" width="562" height="317").d-block
+          img(src="images/finances-frame-image.png" loading="lazy" alt="image" width="368" height="246").d-block
